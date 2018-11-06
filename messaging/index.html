@@ -73,6 +73,17 @@ limitations under the License.
 </div>
 
 
+
+
+
+<!-- Import and configure the Firebase SDK -->
+<!-- These scripts are made available when the app is served or deployed on Firebase Hosting -->
+<!-- If you do not serve/host your project using Firebase Hosting see https://firebase.google.com/docs/web/setup -->
+
+<script src="https://www.gstatic.com/firebasejs/5.5.7/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.5.7/firebase-messaging.js"></script>
+<!--script src="https://www.gstatic.com/firebasejs/firebase/init.js"></script-->
+
 <script src="https://www.gstatic.com/firebasejs/5.5.7/firebase.js"></script>
 <script>
   // Initialize Firebase
@@ -86,16 +97,7 @@ limitations under the License.
   };
   firebase.initializeApp(config);
 </script>
-
-
-<!-- Import and configure the Firebase SDK -->
-<!-- These scripts are made available when the app is served or deployed on Firebase Hosting -->
-<!-- If you do not serve/host your project using Firebase Hosting see https://firebase.google.com/docs/web/setup -->
-
-<!--script src="https://www.gstatic.com/firebasejs/5.5.7/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/5.5.7/firebase-messaging.js"></script>
-<script src="https://www.gstatic.com/firebasejs/firebase/init.js"></script-->
-
+  
 <script>
   // [START get_messaging_object]
   // Retrieve Firebase Messaging object.
