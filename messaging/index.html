@@ -86,18 +86,25 @@ limitations under the License.
 
 <script src="https://www.gstatic.com/firebasejs/5.5.7/firebase.js"></script-->
   
-<script src="/firebase.js"></script>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.2.1/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
 <script>
-  // Initialize Firebase
-  var config = {
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
     apiKey: "AIzaSyDTSx6b1Yw93zZ2x-6gXopLUsDvBQdLS08",
     authDomain: "usbfcmtest.firebaseapp.com",
     databaseURL: "https://usbfcmtest.firebaseio.com",
     projectId: "usbfcmtest",
     storageBucket: "usbfcmtest.appspot.com",
-    messagingSenderId: "312853266324"
+    messagingSenderId: "312853266324",
+    appId: "1:312853266324:web:72a8e19284438f95c2d981"
   };
-  firebase.initializeApp(config);
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
 </script>
   
 <script>
@@ -107,7 +114,7 @@ limitations under the License.
   // [END get_messaging_object]
   // [START set_public_vapid_key]
   // Add the public key generated from the console here.
-  messaging.usePublicVapidKey('BBA5Ax5AA3MC5p3TOLB3p7P0fdCoPLAsT5dvB2JbQcayoRBYW8rYo9Pw68jmUb5DRY2liKwrHis9EBi-XmJaN_k');
+  //messaging.usePublicVapidKey('BBA5Ax5AA3MC5p3TOLB3p7P0fdCoPLAsT5dvB2JbQcayoRBYW8rYo9Pw68jmUb5DRY2liKwrHis9EBi-XmJaN_k');
   // [END set_public_vapid_key]
 
   // IDs of divs that display Instance ID token UI or request permission UI.
